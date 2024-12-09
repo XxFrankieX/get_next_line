@@ -6,25 +6,24 @@
 /*   By: mconde-s <mconde-s@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 18:19:16 by mconde-s          #+#    #+#             */
-/*   Updated: 2024/12/05 19:30:54 by mconde-s         ###   ########.fr       */
+/*   Updated: 2024/12/09 20:05:40 by mconde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "get_next_line.h"
 
-
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-	size_t i;
+	size_t	i;
+
 	i = 0;
 	if (!s)
-		return 0;
-	while(s[i])
+		return (0);
+	while (s[i])
 		i++;
-	return(i);
+	return (i);
 }
+
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*dest2;
@@ -57,6 +56,7 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
@@ -74,6 +74,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
+
 char	*ft_strdup(const char *s)
 {
 	char	*cpy;
